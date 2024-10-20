@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804746715553",
+    "project_id": "job3locationsharing",
+    "storage_bucket": "job3locationsharing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804746715553:android:b377e0f63b94ae0a05abe0",
+        "android_client_info": {
+          "package_name": "com.mrpaul.job3locationsharing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhy2K0q8IcxEnYQiy06FDDmXMocf9DJGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
