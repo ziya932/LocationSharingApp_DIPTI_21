@@ -30,7 +30,8 @@
         map:layout_constraintHorizontal_bias="0.955"
         map:layout_constraintStart_toStartOf="parent"
         map:layout_constraintTop_toTopOf="parent"
-        map:layout_constraintVertical_bias="0.764" />
+        map:layout_constraintVertical_bias="0.764"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/btnZoomOut"
@@ -43,7 +44,8 @@
         map:layout_constraintHorizontal_bias="0.0"
         map:layout_constraintStart_toStartOf="@+id/btnZoomIn"
         map:layout_constraintTop_toBottomOf="@+id/btnZoomIn"
-        map:layout_constraintVertical_bias="0.134" />
+        map:layout_constraintVertical_bias="0.134"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
