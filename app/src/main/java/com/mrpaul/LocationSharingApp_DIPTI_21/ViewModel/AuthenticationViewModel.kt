@@ -1,4 +1,4 @@
-package com.mrpaul.UserProfileRegistration_DIPTI_21.ViewModel
+package com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel
 
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth

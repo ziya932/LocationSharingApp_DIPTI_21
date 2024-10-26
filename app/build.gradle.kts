@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mrpaul.job3locationsharing"
+    namespace = "com.mrpaul.LocationSharingApp_DIPTI_21"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mrpaul.job3locationsharing"
+        applicationId = "com.mrpaul.LocationSharingApp_DIPTI_21"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

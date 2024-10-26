@@ -33,14 +33,14 @@
             android:value="AIzaSyCS-yGs1TEl7vgYqTj44um9oD0V8Ew10gA" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".MapsActivity_21"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".RegisterActivity_21"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".LoginActivity_21"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +49,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity_21"
             android:exported="false">
         </activity>
     </application>

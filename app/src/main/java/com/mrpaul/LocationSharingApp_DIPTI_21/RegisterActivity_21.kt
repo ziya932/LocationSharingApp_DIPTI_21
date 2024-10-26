@@ -11,7 +11,7 @@ import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityRegisterBinding
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity_21 : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var authenticationViewModel: AuthenticationViewModel
     private lateinit var firestoreViewModel: FireStoreViewModel
@@ -41,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
             } else {
                 authenticationViewModel.register(email, password, {
                     firestoreViewModel.saveUser(this, authenticationViewModel.getCurrentUserId(), name, email, location)
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, MainActivity_21::class.java))
                     finish()
                 }, {
                     Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
@@ -49,7 +49,7 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
         binding.loginTxt.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity_21::class.java))
         }
 
     }
@@ -57,7 +57,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (Firebase.auth.currentUser != null) {
-            startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+            startActivity(Intent(this@RegisterActivity_21, MainActivity_21::class.java))
             finish()
         }
     }

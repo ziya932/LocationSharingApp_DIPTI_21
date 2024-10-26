@@ -1,4 +1,4 @@
-package com.mrpaul.UserProfileRegistration_DIPTI_21
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import org.junit.Test
 

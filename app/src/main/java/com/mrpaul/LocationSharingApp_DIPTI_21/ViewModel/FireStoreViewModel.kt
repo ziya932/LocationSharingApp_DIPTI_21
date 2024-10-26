@@ -1,10 +1,10 @@
-package com.mrpaul.UserProfileRegistration_DIPTI_21.ViewModel
+package com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel
 
 import android.content.Context
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.FirebaseFirestore
-import com.mrpaul.UserProfileRegistration_DIPTI_21.Model.User
+import com.mrpaul.LocationSharingApp_DIPTI_21.Model.User_21
 
 class FireStoreViewModel: ViewModel() {
     private val firestore = FirebaseFirestore.getInstance()
@@ -28,18 +28,18 @@ class FireStoreViewModel: ViewModel() {
                 Toast.makeText(context,e.message.toString(), Toast.LENGTH_SHORT).show()
             }
     }
-    fun getAllUsers(context: Context, callback: (List<User>) -> Unit) {
+    fun getAllUsers(context: Context, callback: (List<User_21>) -> Unit) {
         usersCollection.get()
             .addOnSuccessListener {
-                val userList = mutableListOf<User>()
+                val user21List = mutableListOf<User_21>()
                 for (document in it) {
                     val userId = document.id
                     val displayName = document.getString("displayName") ?: ""
                     val email = document.getString("email") ?: ""
                     val location = document.getString("location") ?: ""
-                    userList.add(User(userId, displayName, email, location))
+                    user21List.add(User_21(userId, displayName, email, location))
                 }
-                callback(userList)
+                callback(user21List)
             }
             .addOnFailureListener { e ->
                 Toast.makeText(context,e.message.toString(), Toast.LENGTH_SHORT).show()
@@ -88,11 +88,11 @@ class FireStoreViewModel: ViewModel() {
             }
     }
 
-    fun getUser(context: Context, userId: String, callback: (User?) -> Unit) {
+    fun getUser(context: Context, userId: String, callback: (User_21?) -> Unit) {
         usersCollection.document(userId).get()
             .addOnSuccessListener {
-                val user = it.toObject(User::class.java)
-                callback(user)
+                val user21 = it.toObject(User_21::class.java)
+                callback(user21)
             }
             .addOnFailureListener { e ->
                 Toast.makeText(context,e.message.toString(), Toast.LENGTH_SHORT).show()

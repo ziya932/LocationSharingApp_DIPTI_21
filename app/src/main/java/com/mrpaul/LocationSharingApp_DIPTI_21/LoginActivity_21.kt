@@ -10,7 +10,7 @@ import com.google.firebase.ktx.Firebase
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity_21 : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var authenticationViewModel: AuthenticationViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter valid password", Toast.LENGTH_SHORT).show()
             } else {
                 authenticationViewModel.login(email, password, {
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, MainActivity_21::class.java))
                     finish()
                 }, {
                     Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.registerTxt.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, RegisterActivity_21::class.java))
         }
 
         binding.forgotpass.setOnClickListener {
@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (Firebase.auth.currentUser != null) {
-            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+            startActivity(Intent(this@LoginActivity_21, MainActivity_21::class.java))
             finish()
         }
     }

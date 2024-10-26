@@ -2,7 +2,7 @@ package com.mrpaul.LocationSharingApp_DIPTI_21.Model
 
 import com.google.firebase.database.PropertyName
 
-data class User(
+data class User_21(
     val userId:String,
     @get:PropertyName("DisplayName")
     @set:PropertyName("DisplayName")

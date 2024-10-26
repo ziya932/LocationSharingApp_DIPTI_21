@@ -11,7 +11,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity_21 : AppCompatActivity() {
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.logout -> {
                     Firebase.auth.signOut()
                     startActivity(
-                        Intent(this, LoginActivity::class.java)
+                        Intent(this, LoginActivity_21::class.java)
                     )
                     finish()
                 }
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.logout -> {
                     Firebase.auth.signOut()
                     startActivity(
-                        Intent(this, LoginActivity::class.java)
+                        Intent(this, LoginActivity_21::class.java)
                     )
                     finish()
                 }

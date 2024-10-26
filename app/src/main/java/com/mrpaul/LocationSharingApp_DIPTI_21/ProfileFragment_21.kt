@@ -20,7 +20,7 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 
-class ProfileFragment : Fragment() {
+class ProfileFragment_21 : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var authViewModel: AuthenticationViewModel
@@ -42,12 +42,12 @@ class ProfileFragment : Fragment() {
 
         binding.logoutBtn.setOnClickListener {
             firebaseAuth.signOut()
-            startActivity(Intent(requireContext(), LoginActivity::class.java))
+            startActivity(Intent(requireContext(), LoginActivity_21::class.java))
 
         }
 
         binding.homeBtn.setOnClickListener {
-            startActivity(Intent(requireContext(), MainActivity::class.java))
+            startActivity(Intent(requireContext(), MainActivity_21::class.java))
         }
 
         loadUserInfo()
@@ -67,7 +67,7 @@ class ProfileFragment : Fragment() {
             val userId = currentUser.uid
             firestoreViewModel.updateUser(requireContext(), userId, newName, newLocation)
             Toast.makeText(requireContext(), "Profile updated successfully", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(requireContext(), MainActivity::class.java))
+            startActivity(Intent(requireContext(), MainActivity_21::class.java))
         } else {
             Toast.makeText(requireContext(), "User not found", Toast.LENGTH_SHORT).show()
         }

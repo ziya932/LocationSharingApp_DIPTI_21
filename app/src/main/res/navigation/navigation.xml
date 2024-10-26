@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/friendsFragment"
-        android:name="com.mrpaul.job3locationsharing.FriendsFragment"
+        android:name="com.mrpaul.LocationSharingApp_DIPTI_21.FriendsFragment_21"
         android:label="fragment_friends"
         tools:layout="@layout/fragment_friends" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.mrpaul.job3locationsharing.ProfileFragment"
+        android:name="com.mrpaul.LocationSharingApp_DIPTI_21.ProfileFragment_21"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action

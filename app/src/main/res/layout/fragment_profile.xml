@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="25dp"
     android:background="@drawable/map2"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment_21">
 
     <TextView
         android:id="@+id/updatePro"

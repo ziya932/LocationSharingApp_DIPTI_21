@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.mrpaul.LocationSharingApp_DIPTI_21.Adapter.UserAdapter
+import com.mrpaul.LocationSharingApp_DIPTI_21.Adapter.UserAdapter_21
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.LocationViewModel
@@ -27,14 +27,14 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FriendsFragment.newInstance] factory method to
+ * Use the [FriendsFragment_21.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FriendsFragment : Fragment() {
+class FriendsFragment_21 : Fragment() {
     private lateinit var binding: FragmentFriendsBinding
     private lateinit var firestoreViewModel: FireStoreViewModel
     private lateinit var authenticationViewModel: AuthenticationViewModel
-    private lateinit var userAdapter: UserAdapter
+    private lateinit var userAdapter21: UserAdapter_21
     private lateinit var locationViewModel: LocationViewModel
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private val requestPermissionLauncher =
@@ -69,16 +69,16 @@ class FriendsFragment : Fragment() {
             // Permission is already granted
             getLocation()
         }
-        userAdapter = UserAdapter(emptyList())
+        userAdapter21 = UserAdapter_21(emptyList())
         binding.userRV.apply {
-            adapter = userAdapter
+            adapter = userAdapter21
             layoutManager = LinearLayoutManager(requireContext())
         }
 
         fetchUsers()
 
         binding.locationBtn.setOnClickListener {
-            startActivity(Intent(requireContext(),MapsActivity::class.java))
+            startActivity(Intent(requireContext(),MapsActivity_21::class.java))
         }
 
 
@@ -87,7 +87,7 @@ class FriendsFragment : Fragment() {
 
     private fun fetchUsers() {
         firestoreViewModel.getAllUsers(requireContext()){
-            userAdapter.updateData(it)
+            userAdapter21.updateData(it)
         }
     }
 

@@ -1,4 +1,4 @@
-package com.mrpaul.UserProfileRegistration_DIPTI_21
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

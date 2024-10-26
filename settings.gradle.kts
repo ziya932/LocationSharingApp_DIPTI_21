@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Job3LocationSharing"
+rootProject.name = "LocationSharingApp_DIPTI_21"
 include(":app")
  

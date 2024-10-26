@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
 import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityMapsBinding
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+class MapsActivity_21 : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
