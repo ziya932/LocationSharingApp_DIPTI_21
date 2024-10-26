@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,8 +10,8 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.mrpaul.job3locationsharing.ViewModel.FireStoreViewModel
-import com.mrpaul.job3locationsharing.databinding.ActivityMapsBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityMapsBinding
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 

@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -14,11 +14,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.mrpaul.job3locationsharing.Adapter.UserAdapter
-import com.mrpaul.job3locationsharing.ViewModel.AuthenticationViewModel
-import com.mrpaul.job3locationsharing.ViewModel.FireStoreViewModel
-import com.mrpaul.job3locationsharing.ViewModel.LocationViewModel
-import com.mrpaul.job3locationsharing.databinding.FragmentFriendsBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.Adapter.UserAdapter
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.LocationViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.FragmentFriendsBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

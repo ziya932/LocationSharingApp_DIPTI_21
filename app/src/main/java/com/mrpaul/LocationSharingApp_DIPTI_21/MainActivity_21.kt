@@ -1,18 +1,15 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.mrpaul.job3locationsharing.databinding.ActivityMainBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private val binding by lazy {

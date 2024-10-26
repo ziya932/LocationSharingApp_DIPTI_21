@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing.ViewModel
+package com.mrpaul.UserProfileRegistration_DIPTI_21.ViewModel
 
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.location.FusedLocationProviderClient

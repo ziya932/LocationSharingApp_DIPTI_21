@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.UserProfileRegistration_DIPTI_21
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

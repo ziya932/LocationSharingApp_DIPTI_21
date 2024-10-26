@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing.Model
+package com.mrpaul.LocationSharingApp_DIPTI_21.Model
 
 import com.google.firebase.database.PropertyName
 

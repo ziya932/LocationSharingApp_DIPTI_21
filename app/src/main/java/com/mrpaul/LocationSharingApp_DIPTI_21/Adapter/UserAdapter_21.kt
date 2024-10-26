@@ -1,10 +1,10 @@
-package com.mrpaul.job3locationsharing.Adapter
+package com.mrpaul.LocationSharingApp_DIPTI_21.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.mrpaul.job3locationsharing.Model.User
-import com.mrpaul.job3locationsharing.databinding.ItemUserBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.Model.User
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ItemUserBinding
 
 class UserAdapter(private var userList: List<User>): RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
     class UserViewHolder(private val binding: ItemUserBinding):RecyclerView.ViewHolder(binding.root){

@@ -1,10 +1,10 @@
-package com.mrpaul.job3locationsharing.ViewModel
+package com.mrpaul.UserProfileRegistration_DIPTI_21.ViewModel
 
 import android.content.Context
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.FirebaseFirestore
-import com.mrpaul.job3locationsharing.Model.User
+import com.mrpaul.UserProfileRegistration_DIPTI_21.Model.User
 
 class FireStoreViewModel: ViewModel() {
     private val firestore = FirebaseFirestore.getInstance()

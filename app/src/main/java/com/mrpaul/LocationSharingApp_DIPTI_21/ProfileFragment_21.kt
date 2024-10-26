@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
-import com.mrpaul.job3locationsharing.ViewModel.AuthenticationViewModel
-import com.mrpaul.job3locationsharing.ViewModel.FireStoreViewModel
-import com.mrpaul.job3locationsharing.ViewModel.LocationViewModel
-import com.mrpaul.job3locationsharing.databinding.FragmentProfileBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.FireStoreViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.LocationViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

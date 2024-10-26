@@ -1,4 +1,4 @@
-package com.mrpaul.job3locationsharing
+package com.mrpaul.LocationSharingApp_DIPTI_21
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.mrpaul.job3locationsharing.ViewModel.AuthenticationViewModel
-import com.mrpaul.job3locationsharing.databinding.ActivityLoginBinding
+import com.mrpaul.LocationSharingApp_DIPTI_21.ViewModel.AuthenticationViewModel
+import com.mrpaul.LocationSharingApp_DIPTI_21.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
